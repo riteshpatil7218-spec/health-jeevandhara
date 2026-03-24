@@ -54,8 +54,15 @@ export default {
           deep: "hsl(var(--navy-deep))",
           mid: "hsl(var(--navy-mid))",
         },
+        blue: {
+          ocean: "hsl(var(--blue-ocean))",
+          sky: "hsl(var(--blue-sky))",
+        },
         cyan: {
           bright: "hsl(var(--cyan-bright))",
+          vivid: "hsl(var(--cyan-vivid))",
+          highlight: "hsl(var(--cyan-highlight))",
+          wash: "hsl(var(--cyan-wash))",
           light: "hsl(var(--cyan-light))",
         },
         health: {
@@ -107,6 +114,10 @@ export default {
           from: { "--num": "0" } as any,
           to: { "--num": "100" } as any,
         },
+        "speaking": {
+          "0%, 100%": { height: "4px" },
+          "50%": { height: "16px" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -114,6 +125,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "slide-up": "slide-up 0.6s ease-out forwards",
         "pulse-dot": "pulse_dot 1.5s ease-in-out infinite",
+        "speaking": "speaking 0.6s ease-in-out infinite",
       },
     },
   },
